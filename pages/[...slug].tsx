@@ -7,6 +7,8 @@ import NotFound from '../components/NotFound';
 import Head from '../components/Head';
 import classes from '../css/page.module.css';
 import RenderBlocks from '../components/RenderBlocks';
+import Landing from '../components/frontend'
+
 
 const { publicRuntimeConfig: { SERVER_URL } } = getConfig();
 
@@ -23,7 +25,9 @@ const Page: React.FC<Props> = (props) => {
   }
 
   return (
+    <><Landing />
     <main className={classes.page}>
+      
       <Head
         title={page.meta?.title || page.title}
         description={page.meta?.description}
@@ -54,6 +58,7 @@ const Page: React.FC<Props> = (props) => {
         </a>
       </footer>
     </main>
+    </>
   );
 };
 

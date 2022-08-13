@@ -25,39 +25,8 @@ const Page: React.FC<Props> = (props) => {
   }
 
   return (
-    <><Landing />
-    <main className={classes.page}>
-      
-      <Head
-        title={page.meta?.title || page.title}
-        description={page.meta?.description}
-        keywords={page.meta?.keywords}
-      />
-      <header className={classes.header}>
-        <h1>{page.title}</h1>
-      </header>
-      <div className={classes.featuredImage}>
-        {page.image && (
-          <img
-            src={`${SERVER_URL}/media/${page.image.sizes?.feature?.filename || page.image.filename}`}
-            alt={page.image.alt}
-          />
-        )}
-      </div>
-      <RenderBlocks layout={page.layout} />
-      <footer className={classes.footer}>
-        <hr />
-        NextJS + Payload Server Boilerplate made by
-        {' '}
-        <a
-          href="https://payloadcms.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Payload
-        </a>
-      </footer>
-    </main>
+    <>
+    <Landing />
     </>
   );
 };

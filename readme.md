@@ -1,4 +1,4 @@
-# Payload + NextJS Server-Rendered TypeScript Boilerplate
+# Elearning platform with nextjs and payload cms coupled together
 
 This repo contains a boilerplate that'll get you going on a Payload install combined with a NextJS frontend.
 

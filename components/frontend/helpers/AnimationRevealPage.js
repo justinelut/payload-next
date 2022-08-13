@@ -35,7 +35,7 @@ function AnimatedSlideInComponent({ direction = "left", offset = 30, children })
     <motion.section
       initial={{ x: x.initial }}
       animate={{ 
-        x: 5
+        x: 1
       }}
       transition={{ type: "spring", damping: 19 }}
     >

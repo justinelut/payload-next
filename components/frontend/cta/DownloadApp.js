@@ -3,7 +3,7 @@ import styled from "styled-components";
 import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import mockupImageSrc from "../images/app-mockup.png"
-import { ReactComponent as SvgDecoratorBlob1 } from "../images/svg-decorator-blob-9.svg";
+// import { ReactComponent as SvgDecoratorBlob1 } from "../images/svg-decorator-blob-9.svg";
 import { ContentWithPaddingXl, Container as ContainerBase } from "../misc/Layouts";
 import { SectionHeading, Subheading as SubheadingBase } from "../misc/Headings.js";
 import appleIconImageSrc from "../images/apple-icon.png";
@@ -32,8 +32,8 @@ const Link = styled.a`
 const ImageContainer = tw(ColumnContainer)`mt-16 lg:mt-0 lg:ml-16 flex justify-end`;
 
 const DecoratorBlobContainer = tw.div`absolute inset-0 overflow-hidden rounded-lg`
-const DecoratorBlob1 = tw(SvgDecoratorBlob1)`absolute bottom-0 left-0 w-80 h-80 transform -translate-x-20 translate-y-32 text-gray-800 opacity-50`
-const DecoratorBlob2 = tw(SvgDecoratorBlob1)`absolute top-0 right-0 w-80 h-80 transform  translate-x-20 -translate-y-64 text-gray-800 opacity-50`
+// const DecoratorBlob1 = tw(SvgDecoratorBlob1)`absolute bottom-0 left-0 w-80 h-80 transform -translate-x-20 translate-y-32 text-gray-800 opacity-50`
+// const DecoratorBlob2 = tw(SvgDecoratorBlob1)`absolute top-0 right-0 w-80 h-80 transform  translate-x-20 -translate-y-64 text-gray-800 opacity-50`
 export default ({
   subheading = "Download App",
   text = "Developers all over the world are happily using Treact.",
@@ -69,8 +69,8 @@ export default ({
           </ImageContainer>
         </Row>
         <DecoratorBlobContainer>
-          <DecoratorBlob1/>
-          <DecoratorBlob2/>
+          {/* <DecoratorBlob1/>
+          <DecoratorBlob2/> */}
         </DecoratorBlobContainer>
       </Content>
     </Container>

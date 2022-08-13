@@ -8,8 +8,8 @@ import Hero from "./hero/BackgroundAsImage";
 // import MainFeature2 from "./features/TwoColSingleFeatureWithStats2.js";
 import TabGrid from "./cards/TabCardGrid.js";
 // import Testimonial from "./testimonials/ThreeColumnWithProfileImage.js";
-// import DownloadApp from "./cta/DownloadApp.js";
-// import Footer from "./footers/FiveColumnWithInputForm.js";
+import DownloadApp from "./cta/DownloadApp.js";
+import Footer from "./footers/FiveColumnWithInputForm.js";
 
 // import chefIconImageSrc from "./images/chef-icon.svg";
 // import celebrationIconImageSrc from "./images/celebration-icon.svg";
@@ -127,11 +127,12 @@ export default () => {
       {/* <Testimonial
         subheading=""
         heading={<>Customers <HighlightedText>Love Us.</HighlightedText></>}
-      />
+      /> */}
       <DownloadApp
         text={<>People around you are ordering delicious meals using the <HighlightedTextInverse>Treact App.</HighlightedTextInverse></>}
       />
-      <Footer /> */}
+
+      <Footer />
       
     </AnimationRevealPage>
   );

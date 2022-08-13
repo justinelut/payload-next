@@ -5,9 +5,9 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import { PrimaryButton as PrimaryButtonBase } from "../misc/Buttons.js";
 
 import LogoImage from "../images/logo.svg";
-import { ReactComponent as FacebookIcon } from "../images/facebook-icon.svg";
-import { ReactComponent as TwitterIcon } from "../images/twitter-icon.svg";
-import { ReactComponent as YoutubeIcon } from "../images/youtube-icon.svg";
+import { AiFillFacebook } from "react-icons/ai";
+import { AiFillTwitterSquare } from "react-icons/ai";
+import { AiFillYoutube } from "react-icons/ai";
 
 const Container = tw.div`relative bg-gray-200 text-gray-700 -mb-8 -mx-8 px-8 py-20 lg:py-24`;
 const Content = tw.div`max-w-screen-xl mx-auto relative z-10`;
@@ -141,13 +141,13 @@ export default () => {
           <CopywrightNotice>&copy; 2018 Treact Inc. All Rights Reserved.</CopywrightNotice>
           <SocialLinksContainer>
             <SocialLink href="https://facebook.com">
-              <FacebookIcon />
+              <AiFillFacebook />
             </SocialLink>
             <SocialLink href="https://twitter.com">
-              <TwitterIcon />
+              <AiFillTwitterSquare/>
             </SocialLink>
             <SocialLink href="https://youtube.com">
-              <YoutubeIcon />
+              <AiFillYoutube />
             </SocialLink>
           </SocialLinksContainer>
         </ThreeColRow>

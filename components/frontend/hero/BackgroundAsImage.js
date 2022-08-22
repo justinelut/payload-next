@@ -82,6 +82,7 @@ export default () => {
     <Container>
       <OpacityOverlay />
       <HeroContainer>
+        <StyledHeader links={navLinks} />
         <TwoColumn>
           <LeftColumn>
             <Notification>We have now launched operations in Europe.</Notification>

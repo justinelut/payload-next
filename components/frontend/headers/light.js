@@ -11,6 +11,7 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { AiFillCloseSquare } from "react-icons/ai";
 
 const Header = tw.header`
+relative
   flex justify-between items-center
   max-w-screen-xl mx-auto
 `;

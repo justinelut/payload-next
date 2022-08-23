@@ -4,9 +4,6 @@ import { GetServerSideProps } from 'next';
 import getConfig from 'next/config';
 import { Type as PageType } from '../collections/Page';
 import NotFound from '../components/NotFound';
-import Head from '../components/Head';
-import classes from '../css/page.module.css';
-import RenderBlocks from '../components/RenderBlocks';
 import Landing from '../components/frontend'
 
 
@@ -17,12 +14,7 @@ export type Props = {
   statusCode: number
 }
 
-const Page: React.FC<Props> = (props) => {
-  const { page } = props;
-
-  if (!page) {
-    return <NotFound />;
-  }
+const Page: React.FC<Props> = ({page}) => {
 
   return (
     <>
@@ -44,6 +36,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
       },
     },
   });
+
 
   if (!pageQuery.docs[0]) {
     ctx.res.statusCode = 404;

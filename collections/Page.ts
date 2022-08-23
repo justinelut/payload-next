@@ -35,6 +35,30 @@ export const Page: CollectionConfig = {
       required: true,
     },
     {
+      name: 'logo', // required
+      type: 'upload', // required
+      relationTo: 'media', // required
+      required: true,
+    },
+    {
+      name: 'menu', // required
+      type: 'array', // required
+      label: 'Main menu',
+      minRows: 2,
+      maxRows: 10,
+      labels: {
+        singular: 'Menu',
+        plural: 'Menus',
+      },
+      fields: [ // required
+      {
+        name: 'Name',
+        label: 'Name',
+        type: 'text',
+      },
+      ]
+    },
+    {
       name: 'image',
       label: 'Featured Image',
       type: 'upload',

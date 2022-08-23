@@ -22,7 +22,7 @@ export default () => {
   const Description = tw.span`inline-block mt-8`;
   const imageCss = tw`rounded-4xl`;
   return (
-    <AnimationRevealPage>
+    <>
       <Hero
         heading={<>Delicious & Affordable <HighlightedText>Meals Near You.</HighlightedText></>}
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -131,9 +131,6 @@ export default () => {
       <DownloadApp
         text={<>People around you are ordering delicious meals using the <HighlightedTextInverse>Treact App.</HighlightedTextInverse></>}
       />
-
-      <Footer />
-      
-    </AnimationRevealPage>
+      </>
   );
 }

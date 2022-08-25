@@ -20,7 +20,7 @@ export type Type = {
 }
 
 export const Page: CollectionConfig = {
-  slug: 'pages',
+  slug: 'footer',
   admin: {
     useAsTitle: 'title',
   },

@@ -1,4 +1,5 @@
 import { CollectionConfig } from 'payload/types';
+import formatSlug from '../utilities/formatSlug';
 
 const Posts: CollectionConfig = {
   slug: 'posts',
@@ -29,6 +30,16 @@ const Posts: CollectionConfig = {
       relationTo: 'categories'
     },
     {
+      name: 'reviews',
+      type: 'relationship',
+      relationTo: 'categories'
+    },
+    {
+      name: 'rating',
+      type: 'relationship',
+      relationTo: 'categories'
+    },
+    {
       name: 'tags',
       type: 'relationship',
       relationTo: 'tags',
@@ -55,6 +66,19 @@ const Posts: CollectionConfig = {
       admin: {
         position: 'sidebar',
       }
+    },
+    {
+      name: 'slug',
+      label: 'Page Slug',
+      type: 'text',
+      admin: {
+        position: 'sidebar',
+      },
+      hooks: {
+        beforeValidate: [
+          formatSlug('title'),
+        ],
+      },
     }
   ],
 }
